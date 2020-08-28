@@ -1,5 +1,5 @@
 module.exports = {
-  title: `MyBlog`,
+  title: `Welcome, MyBlog🥰`,
   description: `Blog posted about TIL (Today I Learned)`,
   author: `[seolleung2]`,
   introduction: `개발을 스스로 해낼 수 있는 올바른 길을 습득하는 중입니다.`,
@@ -15,16 +15,16 @@ module.exports = {
   keywords: [`blog`],
   comment: {
     disqusShortName: '', // Your disqus-short-name. check disqus.com.
-    utterances: 'JaeYeopHan/gatsby-starter-bee', // Your repository for archive comment
+    utterances: 'seolleung2/myFirst-gatsby-blog', // Your repository for archive comment
   },
   configs: {
     countOfInitialPost: 10, // Config your initial count of post
   },
   sponsor: {
-    buyMeACoffeeId: 'jbee',
+    buyMeACoffeeId: 'devseolleung',
   },
   share: {
-    facebookAppId: '', // Add facebookAppId for using facebook share feature v3.2
+    facebookAppId: 'kwangmook.jung', // Add facebookAppId for using facebook share feature v3.2
   },
   ga: '', // Add your google analytics tranking ID
 }
