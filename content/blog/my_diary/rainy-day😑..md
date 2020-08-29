@@ -2,7 +2,7 @@
 title: "Rainy day\U0001F611."
 date: 2020-08-29 12:00:00
 category: my_diary
-thumbnail: { thumbnailSrc }
+# thumbnail: { thumbnailSrc }
 draft: false
 ---
 
