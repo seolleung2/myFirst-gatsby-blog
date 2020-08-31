@@ -1,13 +1,11 @@
 ---
 title: 'about'
-date: 2019-1-27 16:21:13
-lang: 'en'
+date: 2020-8-31 19:05:00
+lang: 'ko'
 ---
 
 # Your name
 
-<div align="center">
+안녕하세요!🥳 개발을 스스로 해낼 수 있는 올바른 길을 배워 나가고 있는 선릉이(seolleung2)라고 합니다. 그날 배운 것을 바로 적용해 보기 위해 포트폴리오 웹 사이트를 만들 예정입니다. 고시원 그리고 공유오피스에서 노트북과 단둘이 친구 먹었습니다.👻
 
-_Thank you for reading my resume. If you want to contact me, Please send me an email._
-
-</div>
+## 🏢 경력
