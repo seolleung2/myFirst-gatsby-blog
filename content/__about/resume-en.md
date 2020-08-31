@@ -1,7 +1,7 @@
 ---
 title: 'about'
 date: 2020-8-31 19:05:00
-lang: 'ko'
+lang: 'en'
 ---
 
 # Your name
