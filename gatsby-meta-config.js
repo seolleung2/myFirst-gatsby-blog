@@ -1,5 +1,5 @@
 module.exports = {
-  title: `💻seolleung2.dev`,
+  title: `💻 seolleung2.dev`,
   description: `Blog posted about TIL (Today I Learned)`,
   author: `[seolleung2]`,
   introduction: `개발을 스스로 해낼 수 있는 올바른 길을 습득하는 중입니다.`,
