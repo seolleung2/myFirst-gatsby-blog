@@ -1,7 +1,7 @@
 ---
 title: Day 2 DevLog (Tue)
 date: 2020-09-08 22:09:00
-category: codestates til
+category: CodeStates TIL
 draft: false
 ---
 
