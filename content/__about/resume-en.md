@@ -10,4 +10,4 @@ lang: 'en'
 
 ## 🏢 경력
 
-소스개발 6년차 (source 개발 아니고 sauce 개발)
+식품기업 소스개발 6년차 (source 개발 아니고 sauce 개발)
