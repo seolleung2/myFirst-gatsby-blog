@@ -1,5 +1,5 @@
 ---
-title: Day 3 DevLog (Wed) 1주차 회고
+title: Day 5 DevLog (Fri) 1주차 회고
 date: 2020-09-11 21:20:00
 category: CodeStates TIL
 draft: false
