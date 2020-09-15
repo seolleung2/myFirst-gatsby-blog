@@ -1,7 +1,7 @@
 ---
 title: About Git
 date: 2020-09-15 12:00:00
-category: javascript
+category: development
 draft: false
 ---
 
