@@ -7,7 +7,7 @@ draft: false
 
 ## 1. Git (Version Control System) 에 대해
 
-![](https://i.pinimg.com/originals/58/e1/b7/58e1b722ae5539b9c23776f18d3d7a45.jpg)
+<p align="center"><img src="https://i.pinimg.com/originals/58/e1/b7/58e1b722ae5539b9c23776f18d3d7a45.jpg"></p>
 
 여러 사람들이 하나의 파일을 다룰 때 사용하고 파일의 변경사항을 추적할 수 있고, 이전 버전의 파일 확인이 가능하다.
 
