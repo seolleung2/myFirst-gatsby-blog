@@ -5,7 +5,7 @@ category: development
 draft: false
 ---
 
-## Koans_04_Scope.js 를 풀면서😳
+## Koans 04번 주제 Scope.js 를 풀면서😳
 
 ```js
 it('lexical scope와 closure에 대해 다시 확인합니다.', function() {
