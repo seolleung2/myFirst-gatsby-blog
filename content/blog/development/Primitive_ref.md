@@ -140,4 +140,49 @@ score 의 변수에는 아무 영향을 미치지 못한다. score 의 값은 �
 
 아깐 뭐가 맞는지 몰라 틀렸는데 지금은 갑자기 풀이가 매끄러워 졌다 🥰
 
-## 아이 조아 👅
+## 200919 추가. 배열을 슬라이스로 복사해온 변수는 기존 배열의 변수와 값이 같을까?
+
+아래는 콘솔 창의 결과 를 긁어와 봤다..
+임의의 배열과 그 배열을 slice(0) 을 통해 복사한 arr2.
+
+```js
+
+const arr = ['peanut', 'butter', 'and', 'jelly'];
+
+const arr2 = arr.slice(0);
+
+arr2
+(4) ["peanut", "butter", "and", "jelly"]0: "peanut"1: "butter"2: "and"3: "jelly"length: 4__proto__: Array(0)
+
+arr === arr2
+
+false
+```
+
+안 똑같다 한다.
+오브젝트 자료형은 내부 값이 같은지 비교하는게 아니라 할당된 주소가 같은지 어쩐지를 본다고 했다.
+
+겉보기에는 모양이 같아 보이지만 arr.slice() 를 통해 새로운 주소에 할당된 배열 주소를 arr2 에 넘겨 준다.
+그래서 두 변수의 주소는 서로 다르다.
+
+아래는 어제 저녁에 학습했던 예시.
+
+```js
+const arr = ['peanut', 'butter', 'and', 'jelly']
+
+const arr2 = arr
+
+arr(4)[('peanut', 'butter', 'and', 'jelly')]
+
+arr2(4)[('peanut', 'butter', 'and', 'jelly')]
+
+arr === arr2
+
+true
+```
+
+어제 학습했듯이 이번에는 두개의 변수가 메모리 어딘가 주소에 있는 배열을 같은 주소로 바라보고 있다.
+
+그래서 true
+
+## 아이 조아 👅 할라다가 와 다시 머리가 아파졌다..
