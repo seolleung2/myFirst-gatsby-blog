@@ -17,4 +17,6 @@ draft: false
 
 ## https://javascript.pythoncheatsheet.org/
 
+## https://ilovecoding.org/blog/js-cheatsheet
+
 깃 포크 떠서 클론한 뒤 공부하면서 한글로 내 입맛에 맞게 수정해도 좋을 거 같기도 하다.
