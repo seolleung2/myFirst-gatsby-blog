@@ -40,6 +40,9 @@ HTML 로 웹, 앱의 구조 잡기라는 주제를 통해 목업 폰의 예시�
 
 <p align="center"><img src="./images/myprofiles.gif"></p>
 
+![](./images/profileweb1.jpeg)
+![](./images/profileweb2.jpeg)
+
 시간이 빨리 갔던 거 같다. 하지만 몇개 할 수 있는 게 없었다.
 
 대체 css 에서 모든 요소를 어떻게 가운데 정렬을 할 수 있단 말인가. 찾아보니 margin 0 auto 했는데도 안되고.. 저 리스트 모음을 오른쪽으로 어케어케 해서 저 맨 끝으로 넣고 싶은데..
