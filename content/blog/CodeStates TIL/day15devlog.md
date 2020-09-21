@@ -36,7 +36,9 @@ HTML 로 웹, 앱의 구조 잡기라는 주제를 통해 목업 폰의 예시�
 
 ## 😭14:00 - 17:00 - Profile 웹 페이지 HTML 문서 만들기
 
-![](./images/myprofiles.gif)
+** 참고로 오늘 만든 해당 영상 gif 만들다가 100메가 넘어가서 깃이 오류를 일읔켜서 심장이 철렁했다.. **
+
+<p align="center"><img src="./images/myprofiles.gif"></p>
 
 시간이 빨리 갔던 거 같다. 하지만 몇개 할 수 있는 게 없었다.
 
