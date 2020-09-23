@@ -54,11 +54,12 @@ forEach () 반복문에 대해서도 알 수 있었고 그냥 append 와 appendC
 html 구조가 비슷하지만 보니까 약간 차이가 있었다.
 
 최대한 이해하고 구글 개발자 도구에서 직접 입력해가면서 되는 결과를 다시 크롬 개발도구에서 vscode 로 옮겨 붙여보고 했다.
-![](.images/mytweet.png)
+
+![](./images/mytweet.png)
 
 처음엔 위와 같이 시작했지만 오전의 좌절을 모두 만회시키겠다 하고 초집중했다.
 
-![](.images/mytweet2.jpeg)
+![](./images/mytweet2.jpeg)
 
 잘 알려주신 페어님에게도 감사하고 뭔가 해냈다는 느낌이 들어 정말 뿌듯했다.
 
