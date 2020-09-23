@@ -1,5 +1,5 @@
 ---
-title: Day 17 DevLog (Wef)
+title: Day 17 DevLog (Wed)
 date: 2020-09-23 23:50:00
 category: CodeStates TIL
 draft: false
