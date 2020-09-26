@@ -1,5 +1,5 @@
 ---
-title: Day 19 DevLog (Thu)
+title: Day 19 DevLog (Fri)
 date: 2020-09-25 19:30:00
 category: CodeStates TIL
 draft: false
