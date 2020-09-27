@@ -378,8 +378,8 @@ sortBy.join(', ')
 
 ## 4. 느낀 점
 
-![](./images/arr_func/arr.func1.jpeg)
-![](./images/arr_func/arr.func2.jpeg)
+![](./images/arr_func/arr_func1.jpeg)
+![](./images/arr_func/arr_func2.jpeg)
 
 손으로 아이패드에 필기도 해보고, 콘솔창에 찍어 보기도 하면서 유튜브에서 강의를 듣게 되기 전과 많이 달라진 거 같다.
 일단 이러한 영상을 볼 수 있게 도와준 나의 페어님 (재홍님) 에게 진심 감사하다.
