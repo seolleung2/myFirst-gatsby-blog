@@ -8,3 +8,5 @@ draft: false
 ## 💤09:00 - 기상 및 씻기
 
 ## Hiring Assessment
+
+7번..
