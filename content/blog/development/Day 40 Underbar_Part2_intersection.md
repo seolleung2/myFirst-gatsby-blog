@@ -1,6 +1,6 @@
 ---
 title: Day 40 UnderBar_Part2 (Intersection) 해냈다.
-date: 2020-10-15 23:55:00
+date: 2020-10-17 03:22:00
 category: development
 draft: false
 ---
