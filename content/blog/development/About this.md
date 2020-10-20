@@ -10,11 +10,13 @@ draft: false
 객체의 구조분해할당 을 학습하고 이제 이 this 키워드 라는 것에 대해 블로깅 해보려 한다.
 
 첫번째. 블로그 주인 : 나는 멋진 백엔드 개발자가 될 거야.
+
 두번째, 이머시브 동기 : 나는 더 구체적으로 프론트 엔드 개발자가 될 거야.
+
 세번째, 지나가는 행인 : 흥 나는 다 필요없고 로또나 하나 얻어 걸려 돈많은 백수가 될 거야.
 
 this 를 하는데 갑자기?
-첫번째의 '나' 는 바로 블로그 주인이다. 나머지도 마찬가지다.
+첫번째의 '나' 는 바로 블로그 주인이다. 나머지도 각자 다 동기, 헹인으로 되어있다.
 
 ```js
 나 === 블로그 주인
@@ -39,8 +41,34 @@ this는 함수 실행시 호출(invocation) 방법에 의해 결정되는 특별
 
 node.js 환경에서 this는 기본적으로 module.exports 객체를 가리키고 이는 빈 객체가 들어 있는 것 ({}) 과 같다고만 확인하고 넘어갔다.
 
+실제 실행해 보면 아래와 같다.
+
+```js
+Module {
+  id: '<repl>',
+  path: '.',
+  exports: {},
+  parent: undefined,
+  filename: null,
+  loaded: false,
+  children: [],
+  paths: [
+    '/Users/seolleung/my-blog/repl/node_modules',
+    '/Users/seolleung/my-blog/node_modules',
+    '/Users/seolleung/node_modules',
+    '/Users/node_modules',
+    '/node_modules',
+    '/Users/seolleung/.node_modules',
+    '/Users/seolleung/.node_libraries',
+    '/Users/seolleung/.nvm/versions/node/v12.18.3/lib/node'
+  ]
+}
+```
+
 그런데 node.js 환경에서 함수를 호출할 때 this 를 리턴하면, this 의 값은 global 이라는 객체를 불러온다.
 이 global 이라는 객체는 브라우저 환경의 window 객체와 비슷하게 작동한다.
+
+이건 블로그의 맨 마지막 절에서 node 콘솔 내에서 실행한 결과 값을 확인해 볼 수 있다.
 
 ```js
 // 1. 함수 표현식
@@ -107,6 +135,7 @@ counter 라는 객체에는 네 종류의 키가 있고 (value, increase, decrea
 각 함수내에 선언되어 있는 this 는 counter 라는 객체를 가리키고, this.value 는 counter 객체의 value 키를 가리킨다.
 
 이제 위의 코드를 화살표 함수로 작성한 뒤 메소드를 호출했을 때 this 는 어떻게 확인 될까?
+
 이해는 되지 않지만 일단 그렇구나 하고 나를 내려 놓기로 했다.
 
 아까 화살표함수를 호출할 때 리턴되는 this 를 확인해 본 값은 module.exports 라 했다. 그 상태에서 아래 코드를 확인한다.
@@ -161,7 +190,8 @@ function Car(name, brand, color) {
 ```
 
 Car 라는 클래스 (함수) 를 선언했다.
-바로 아래의 코드인 this_value_in_constructor = this; 가 없었더라면 this 가 가리키는 것은 global 이였을까?
+바로 아래의 코드인 this _ value _ in_constructor = this; 가 없었더라면 this 가 가리키는 것은 global 이였을까?
+
 (지금 보니 없어도 생성자 호출을 할 때, this는 new 키워드로 생성한 Car 의 인스턴스 mycar, yourcar 가 된다.)
 
 그리고 아래의 코드와 같이 만들어진 함수를 호출한다.
@@ -182,10 +212,10 @@ expect(this_value_in_constructor).to.eql(yourcar)
 
 #### ✨생성자 호출을 할 경우, this는 new 키워드로 생성한 Car 의 인스턴스입니다.
 
-위의 클래스 함수 에서 this_value_in_constructor 를 지우고 콘솔에 실행해 봤는데 동작했다.
+위의 클래스 함수 에서 this _ value _ in_constructor 를 지우고 콘솔에 실행해 봤는데 동작했다.
 저 변수는 아마도 this 가 어떤 것인지 보여주기 위한 변수 일까 추측해 본다.
 
-그래서 this_value_in_constructor 를 콘솔에서 확인해 보면 아래와 같다.
+그래서 this _ value _ in_constructor 를 콘솔에서 확인해 보면 아래와 같다.
 
 ```js
 this_value_in_constructor
@@ -210,7 +240,7 @@ expect(this_value_in_constructor).to.eql(global)
 
 new 키워드 없이 호출 했을 때 this 키워드는 global 객체를 불러온다.
 
-this_value_in_constructor 를 node 에서 실행하면 아래와 같은 global 객체가 나온다.
+this _ value _ in_constructor 를 node 에서 실행하면 아래와 같은 global 객체가 나온다.
 
 ```js
 Object [global] {
@@ -245,4 +275,7 @@ Object [global] {
 ```
 
 과재는 제출했지만 난 여기까지 이해 하기 위해 블로그 정리를 한 뒤 보는 시간을 가져야 겠다.
+
 오늘 끝!
+
+# 😭😭😭😭😭😭😭😭😭😭
