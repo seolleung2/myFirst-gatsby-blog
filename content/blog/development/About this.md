@@ -101,6 +101,10 @@ expect(foo()).to.eql(module.exports)
 
 화살표 함수를 호출했을 때 this 값은 module.exports 라 한다. 왜일까? foo 가 아니고?
 
+![](./images/this.png)
+
+깊게 파헤치지 말자. 일단.
+
 ## ⚒함수와 메소드의 차이.
 
 함수는 알고 있지만 메소드는 특히,
