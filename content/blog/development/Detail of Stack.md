@@ -1,5 +1,5 @@
 ---
-title: Data Structure - Stack & Queue (2)
+title: Stack 의 기능 구현하기
 date: 2020-10-22 16:00:00
 category: development
 draft: false
