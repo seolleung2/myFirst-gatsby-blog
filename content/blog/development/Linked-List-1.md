@@ -174,7 +174,7 @@ LinkedList { head: {value: "samgyupsal", next: null},
 
 this.head 가 저기 구석탱이에서 몰래 지켜보고 있는 거다..
 
-![](https://lh3.googleusercontent.com/proxy/Zat8gE1vpVdBlVrMfAdeRiPtSTu6Wu2SGuP1pfLiSzjGhs8r75b5DSYaoPm6K9kM27i2cy8-hCTqFSA3xBYoKFrWMVrfHjIGgXqwLOq0P-oZO2eVannr1gz3CvuKJN5T9KY4I_xtLxZOgngTGgE)
+![](https://lh3.googleusercontent.com/proxy/jZIb1faV3TM1kxjZER6GS4g5nIQzQKDt1CtDfM04PPmcswp6wE0jhawRQSp9tO4IyEDxfOt7HnHcBi4anc5goWQHzjhX4vKts3LzERUL0fKT3OA2uXNJLwm-LgmqHQgeEPxFRsZGlbSQf7JrEg)
 
 왜?
 
