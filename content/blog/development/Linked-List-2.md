@@ -45,24 +45,30 @@ let fruitsList = new LinkedList();
 
 fruitsList.addToTail('🍎');
 
+```js
 LinkedList {head: Node, tail: Node, size: 1}
 head: Node {value: "🍎", next: null}
 tail: Node {value: "🍎", next: null}
+```
 
 두번째. 포도를 넣는 과정을 풀어본다.
+
 fruitsList.addToTail('🍇');
 
 일단 어찌됐건 이 상태에서 '포도' 노드가 하나 만들어 진다.
+
 Node {value: "🍇", next: null}
 
 else 구문 바로 아래의 this.tail.next = node 의 동의 어는 바로
 
 this.tail.next = {value: "🍇", next: null} 이 된다 그러므로,
 
+```js
 LinkedList {head: Node, tail: Node, size: 1}
 head: Node {value: "🍎", next: null}
 tail: Node {value: "🍎", next: {value: "🍇", next: null}}
-size: 1\_\_proto: Object
+size: 1 _proto: Object
+```
 
 애초 맨 처음에 '사과' 노드를 넣는 과정에서 'head' 와 'tail' 이 동일한 노드를 바라보고 있다.
 
@@ -71,18 +77,22 @@ size: 1\_\_proto: Object
 그렇기 때문에 this.tail.next 에 포도를 넣건 할애비를 넣건 'head' 의 'next' 도 똑같이
 자동 원격 으로 바뀌어 버리는 것이다.
 
+```js
 LinkedList {head: Node, tail: Node, size: 1}
 head: Node {value: "🍎", next: {value: "🍇", next: null}}
 tail: Node {value: "🍎", next: {value: "🍇", next: null}}
-size: 1\_\_proto: Object
+size: 1 _proto: Object
+```
 
 그리고 else 의 두 번째 구문 this.tail = node 를 통해,
 '포도' 노드가 this.tail 을 완전히 덮어 씌워 버리게 된다.
 
+```js
 LinkedList {head: Node, tail: Node, size: 1}
 head: Node {value: "🍎", next: {value: "🍇", next: null}}
 tail: Node {value: "🍇", next: null}
-size: 1\__proto_: Object
+size: 1_proto: Object
+```
 
 그리고 두번째, this.tail = node; 를 통해서 포도 노드 자체가 this.tail 을 덮어씌기 해버리면
 
@@ -101,27 +111,34 @@ Node {value: "🍋", next: null}
 
 일단 else 의 첫번째 구문 this.tail.next = node 를 실행해 보자.
 
+```js
 LinkedList {head: Node, tail: Node, size: 2}
 head: Node {value: "🍎", next: {value: "🍇", next: null}}
 tail: Node {value: "🍇", next: {value: "🍋", next: null}}
-size: 2\_\_proto: Object
+size: 2_proto: Object
+```
 
 세번 째 레몬 노드를 넣더라 하더라도,
+
 this.tail.next = next: {value: "🍋", next: null}
 
+```js
 LinkedList {head: Node, tail: Node, size: 2}
 head: Node {value: "🍎", next: {value: "🍇", next: {value: "🍋", next: null}}}
 tail: Node {value: "🍇", next: {value: "🍋", next: null}}
-size: 2\_\_proto: Object
+size: 2_proto: Object
+```
 
 this.tail 과 this.head.next 는 동일한 Node (포도) 의 주소를 가리키고 있기 때문에 this.head.next 도 마찬가지로 자동으로 바뀌게 되는 것이다.
 
 마지막으로 tail 에 레몬 노드를 덮어 씌우고 가출한다. (this.tail = node)
 
+```js
 LinkedList {head: Node, tail: Node, size: 3}
 head: Node {value: "🍎", next: {value: "🍇", next: {value: "🍋", next: null}}}
 tail: Node {value: "🍋", next: null}
-size: 3\__proto_: Object
+size: 3_proto: Object
+```
 
 하지만 head.next.next 에는 레몬 노드의 주소 흔적이 고스란히 남아 있고,
 
