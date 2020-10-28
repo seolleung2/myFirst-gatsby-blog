@@ -1,6 +1,6 @@
 ---
 title: Day 52 DevLog (Wed)
-date: 2020-10-28 23:55:00
+date: 2020-10-29 00:10:00
 category: CodeStates TIL
 draft: false
 ---
