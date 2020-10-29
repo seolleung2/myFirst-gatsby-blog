@@ -18,8 +18,7 @@ draft: false
 그리고 공부하면서 느끼게 된 사실인데
 
 게임할 때 부모님 안부를 그렇게 많이 여쭙듯이, 부모님을 대신 일을 시키고 부모님을 등골을 빼오는 등 이번 학습에서는 불효를 많이 저질르게 되는 거 같다.
-
-![](https://thumbor.forbes.com/thumbor/fit-in/1200x0/filters%3Aformat%28jpg%29/https%3A%2F%2Fblogs-images.forbes.com%2Fjvchamary%2Ffiles%2F2016%2F03%2Fman_of_steel-1200x800.jpg)
+![](https://lh3.googleusercontent.com/proxy/56H2KkTflXSs9d7G3NHT9Ec-6ENpIjruYN-sEcgZrOdiY689-1kvIE3146mzkqGpQqBTDzARNyPW3YwdRLUGtUpBpaOf3XIEZIzVN2nIR2JP3ApArEZcntUZabgBscfv6ZPwp75hJbO0AfIhBrihgQ)
 
 ```js
 class Person {
@@ -229,3 +228,7 @@ sunny.avg()
 
 - 부모 클래스에서 기능을 추가하고 싶을 때 필요한 코드를 자식 클래스에서 중복 작성해야 한다.
 - 자식 클래스에서 부모 클래스의 속성값에 접근하지 못한다.
+
+![](https://thumbor.forbes.com/thumbor/fit-in/1200x0/filters%3Aformat%28jpg%29/https%3A%2F%2Fblogs-images.forbes.com%2Fjvchamary%2Ffiles%2F2016%2F03%2Fman_of_steel-1200x800.jpg)
+
+슈퍼슈퍼맨~~
