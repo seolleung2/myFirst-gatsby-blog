@@ -19,7 +19,7 @@ draft: false
 
 게임할 때 부모님 안부를 그렇게 많이 여쭙듯이, 부모님을 대신 일을 시키고 부모님을 등골을 빼오는 등 이번 학습에서는 불효를 많이 저질르게 되는 거 같다.
 
-<p align="center"><img src="https://lh3.googleusercontent.com/proxy/56H2KkTflXSs9d7G3NHT9Ec-6ENpIjruYN-sEcgZrOdiY689-1kvIE3146mzkqGpQqBTDzARNyPW3YwdRLUGtUpBpaOf3XIEZIzVN2nIR2JP3ApArEZcntUZabgBscfv6ZPwp75hJbO0AfIhBrihgQ"></p>
+<p align="center"><img src="https://file3.instiz.net/data/file3/2018/02/20/3/5/3/353ab5ceb6ad70c047190f03f6d8c516.jpg"></p>
 
 ```js
 class Person {
