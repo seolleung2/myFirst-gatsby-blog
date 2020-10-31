@@ -1,5 +1,5 @@
 ---
-title: 🍎객체 지향 프로그래밍 (9) __proto__ 를 대체하는 Object.create()
+title: 🍎객체 지향 프로그래밍 (10) __proto__ 를 대체하는 Object.create()
 date: 2020-10-31 23:55:00
 category: development
 draft: false
@@ -24,8 +24,7 @@ let pikachu = {
 }
 let raichu = Object.create(pikachu)
 raichu
-{
-}
+// {} 비어있다. 하지만 __proto__ 가 출동한다면 어떨까?
 __proto__: attack: 90
 defence: 50
 skillOne: 'toSlapYourFace'
@@ -41,7 +40,7 @@ Object.create() 의 인자에 부모 객체를 태워서 새로운 객체를 만
 
 ## ⚡️라이츄에게 다른 속성 넣어주기
 
-![](https://images-na.ssl-images-amazon.com/images/I/61NEy1dZTQL.jpg)
+<p align="center"><img src="https://images-na.ssl-images-amazon.com/images/I/61NEy1dZTQL.jpg"></p>
 
 ```js
 raichu.cuteness = 100
