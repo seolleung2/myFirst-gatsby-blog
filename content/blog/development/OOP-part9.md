@@ -26,9 +26,9 @@ let raichu = { cuteness: 100, specialSkill: 'jungwangsukwha', canEvolve: true }
 
 현재 두 객체는 서로 남남이다. 1도 상관없는 사이이다.
 
-## 🌉**proto**
+## 🌉\_\_proto\_\_\
 
-![](https://ww.namu.la/s/b1d3ad491da7c8d6a751b0df00749759f6b4d61bc39b4f594a9fc6fed51bcc30e141738a06655fbb92bbfee6a47eecb1b438b9438875bc877de987a05832f4398e552f855e76b7f81041d8bfcb49186bffd500fb3d8be9cbfed070ecbaa1edfc)
+![](https://ww.namu.la/s/3e7464bb7b69c699c56a968b51e01015f9bf51e780394bd971ac0f0cec4856f19011fd010269f78c889b8b856c23cc8cb1ede0fc3c6c6774059691646518d386180a3c3c7e615e1193016d0ec40eac05ffe55a3d44ce2322522236bca5abfd8a)
 
 위의 다소 난해한 듯한 예시를 들긴 했는데 사실,
 
@@ -67,7 +67,7 @@ raichu.skillTwo
 ;('lightning shock')
 ```
 
-![](https://jjalbot.com/media/2018/12/FxIV6_Mff/zzal.gif)
+<p align="center"><img src="https://jjalbot.com/media/2018/12/FxIV6_Mff/zzal.gif"></p>
 
 피카츄 (원형객체) 의 싸대기 스킬을 그대로 물려받았다!
 
@@ -118,7 +118,7 @@ pikachu.attack
 
 피카츄의 공격력은 여전히 똑같다.
 
-즉, 라이츄의 (자식 객체 내 요소의) 값을 바꿨을 뿐 ** proto ** 가 가리키고 있는 객체의 (피카츄) 값을 가리키는게 아니다.
+즉, 라이츄의 (자식 객체 내 요소의) 값을 바꿨을 뿐 \_\_proto\_\_\가 가리키고 있는 객체의 (피카츄) 값을 가리키는게 아니다.
 
 피카츄 객체의 proto 를 바꾸는 게 아니다.
 
@@ -139,8 +139,8 @@ true
 
 장점은 유연함, 단점은 사고 혹은 복잡성을 야기한다고 한다. (일단 넘어가자)
 
-자바스크립트 표준에서는 ** proto ** 를 인정하고 있지 않다고 한다.
+자바스크립트 표준에서는 \_\_proto\_\_\ 를 인정하고 있지 않다고 한다.
 
-하지만 대부분의 브라우저 혹은 javascript 시스템들이 ** proto ** 를 실제로 구현해서 제공하기 때문에 사실상의 표준인 셈이라 한다.
+하지만 대부분의 브라우저 혹은 javascript 시스템들이 \_\_proto\_\_\를 실제로 구현해서 제공하기 때문에 사실상의 표준인 셈이라 한다.
 
 하지만 위와 같은 방법으로 상속을 받는 것은 정석이 아니라고 한다.
