@@ -64,6 +64,7 @@ kim.avg()
 ## 2. ➕클래스에 다른 기능 추가하기 - 클래스를 하나 또 만들기
 
 위의 코드를 고대로 복붙해서 클래스 이름만 다르게 만드는 거다.
+그리고 신기술 avg() 를 추가해 주는 거다.
 
 ```js
 class Person {
@@ -74,9 +75,6 @@ class Person {
   }
   sum() {
     return this.first + this.second
-  }
-  avg() {
-    return (this.first + this.second) / 2
   }
 }
 
