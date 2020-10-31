@@ -31,9 +31,6 @@ class Person {
   sum() {
     return this.first + this.second
   }
-  avg() {
-    return (this.first + this.second) / 2
-  }
 }
 
 class PersonPlus extends Person {
@@ -66,9 +63,6 @@ class Person {
   }
   sum() {
     return this.first + this.second
-  }
-  avg() {
-    return (this.first + this.second) / 2
   }
 }
 
@@ -117,9 +111,6 @@ class Person {
   }
   sum() {
     return this.first + this.second
-  }
-  avg() {
-    return (this.first + this.second) / 2
   }
 }
 
