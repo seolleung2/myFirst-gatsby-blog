@@ -15,7 +15,7 @@ const Person = new Function() // 위와 동일하다.
 
 자바스크립트에서 함수는 객체이다. 객체이기 때문에 함수들은 property 들을 가질 수 있다.
 
-![](./images/structure.png)
+![](./images/structure.jpeg)
 
 ```js
 function Person(name, first, second) {
