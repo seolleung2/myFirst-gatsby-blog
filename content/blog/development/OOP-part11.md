@@ -22,7 +22,7 @@ let ggoboogi = { name: '꼬부기', type: '물', attack1: 75, attack2: 25 }
 
 꼬부기는 이상해씨의 점수 합치기 스킬을 가져다 쓰고 싶다!
 
-<p align="center"><img src="https://lh3.googleusercontent.com/proxy/85h30AvtUlX4rg-js0ZUxy2mlGdsQe3USdMuohVcIYxJUXAn_10ewIvbu68yMWTg47_qS85g7PJwuwQG6Cn586kmcYoYx7L1Hrp_ly03SGbW9r0"></p>
+<p align="center"><img src="https://ww.namu.la/s/187c5738ec5244e5577ab34c31a7acb4ac8b58ea91c887f14e226d4f2b3323a632b91a3ba2b0b56b88d76be17edf6724a98e9ae8f96ad418a008f37ad10c77e12a5e73a71309531e9f6ade98769d22d230cc816781e41b47e630a92ea29f71f7"></p>
 
 ```js
 ggoboogi.__proto__ = esanghaessi
