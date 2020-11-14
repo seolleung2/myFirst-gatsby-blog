@@ -88,6 +88,12 @@ new Promise 객체를 리턴하지만 resolve 나 reject 로 호출하지 않았
 그래서 꼭 Promise 안에는 resolve 나 reject 를 이용해 완료를 지어줘야 한다.
 
 ```js
+function fetchUser() {
+  return new Promise((resolve, reject) => {
+    resolve('GangGunma');
+  })
+}
+
 fetchUser()
 Promise {<fulfilled>: "GangGunma"}
 __proto__: Promise
@@ -116,7 +122,7 @@ Promise {<fulfilled>: undefined}
 ```js
 function fetchUser() {
   return new Promise((resolve, reject) => {
-    return 'GangGunma'
+    resolve('GangGunma')
   })
 }
 
