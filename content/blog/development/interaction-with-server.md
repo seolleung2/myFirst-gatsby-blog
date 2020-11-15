@@ -1,5 +1,5 @@
 ---
-title: 간단용어정리 - Interaction wirh Server
+title: 간단용어정리 - Interaction with Server
 date: 2020-11-15 20:00:00
 category: development
 draft: false
