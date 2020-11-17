@@ -163,8 +163,47 @@ const requestHandler = function(request, response) {
         response.writeHead(200, defaultCorsHeaders)
         response.end(JSON.stringify(body))
       })
+  } else if (request.method === 'OPTIONS') {
+    response.writeHead(201, defaultCorsHeaders)
+    response.end()
+  } else if (request.method === 'POST' && request.url === '/messages') {
+    let body2 = ''
+    request
+      .on('data', chunk => {
+        body2 = body2 + chunk
+      })
+      .on('end', () => {
+        const data = JSON.parse(body2)
+        body.results.push(data)
+        response.writeHead(201, defaultCorsHeaders)
+        response.end(JSON.stringify(data))
+      })
+  } else {
+    response.writeHead(404, defaultCorsHeaders)
+    response.end()
   }
+  // 기본 CORS 설정이 되어있는 코드 입니다. 아래에 있습니다.
+  // console.log(request);
+  // CORS에 대해서는 조금더 알아보세요.
+  const headers = defaultCorsHeaders
+  // 응답 헤더에 응답하는 컨텐츠의 자료 타입을 헤더에 기록 합니다.
+  headers['Content-Type'] = 'text/plain'
+
+  // .writeHead() 메소드의 두번째 인자로는 응답 헤더와 키와 값을 객체 형태로 적어줍니다.
+  // response.writeHead(200, headers);
+
+  // 노드 서버에 대한 모든 요청은 응답이 있어야 합니다. response.end 메소드는 요청에 대한 응답을 보내줍니다.
+  // response.end("Hello, World!");
 }
+
+const defaultCorsHeaders = {
+  'access-control-allow-origin': '*',
+  'access-control-allow-methods': 'GET, POST, PUT, DELETE, OPTIONS',
+  'access-control-allow-headers': 'content-type, accept',
+  'access-control-max-age': 10, // Seconds.
+}
+
+module.exports = requestHandler
 ```
 
 "< Buffer 22 61 62 63 64 22 >" 와 같이 처리 되는 부분을 문자열로 변환하기 위해 위와 같은 방식을 사용했다.
