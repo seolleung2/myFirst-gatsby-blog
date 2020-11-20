@@ -90,4 +90,63 @@ class Twittler extends React.Component {
 }
 ```
 
-아 얼른 자러가야 겠다.. 내일 써야지 ㅠㅠ
+## 👨🏻‍🚀this.state 에 변할 수 있는 정보들을 입력하기
+
+유어클래스에 나와 있는 기본 상태 (Mockup-data) 를 가져다 넣어 주었다.
+
+뭔가 추측으로는 추후에 저 this.state.tweets 라는 배열에 우리가 입력할 값을 배열.push 로 넣으면 될 거 같은데
+
+state 는 직접 수정이 불가하다고 한다.
+
+setState 를 사용하면 된다고 하는데 일단 그건 나중으로 미룬다.
+
+```js
+class Twittler extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      tweets: [
+        {
+          uuid: 1,
+          writer: '애플이🍎',
+          date: '2020-11-19',
+          content: '리액트는 어때?',
+        },
+        {
+          uuid: 2,
+          writer: '건마짜응👨🏻‍',
+          date: '2020-11-19',
+          content: 'Not easy for me..😭',
+        },
+      ],
+    }
+  }
+  render() {
+    // 기본적 UI 를 띄우기 위한 함수.
+  }
+}
+```
+
+## 👩🏿‍🦰기본적 UI 를 띄우는 render() 를 구현하기
+
+일단 서버를 띄웠을 때, 기본적인 인터페이스 정도는 보여줘야 할 테니까 이 또한 일단 유어클래스에서 가져와 넣어보자.
+
+```js
+// class Twittler 내 render 함수 구현
+render() {
+  <div>
+    <div>작성자: 김코딩</div>
+    <div id="writing-area">
+      <textarea id="new-tweet-content"></textarea>
+      <button id="submit-new-tweet">새 글 쓰기</button>
+    </div>
+    <ul id="tweets">
+      <!-- 이 부분은 this.state.tweets를 바탕으로 SingleTweet 컴포넌트가 반복 출력될 것입니다. -->
+    </ul>
+  </div>
+}
+```
+
+여튼 밋밋하지만 됐고 이제 ul 태그 하위에 아까 넣었던 목업 데이터를 불러다 넣어야 한다. 어떻게 넣을까?
+
+## 👨🏻‍🚀JSX 표현식과 map, SingleTweet Component
