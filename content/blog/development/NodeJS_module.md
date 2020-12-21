@@ -51,11 +51,19 @@ fs.readFile(path[, options], callback)
 
 fs.readFile 이라는 모듈은 로컬 파일을 읽어오는 메소드 이다. 또한 비동기 적으로 파일 내용 전체를 읽어들인다고 한다.
 
-### 1. path <string> | <Buffer> | <URL> | <integer>
+### 1. path 의 타입
+
+```js
+path <string> | <Buffer> | <URL> | <integer>
+```
 
 첫번째 인자인 path 에는 위와 같이 네가지 종류의 타입을 넘길 수 있다. 보통은 문자열로 넘긴다고 한다.fs.readFile('/etc/passwd', ..., ...)
 
-### 2. options <Object> | <string>
+### 2. options 의 타입
+
+```js
+options <Object> | <string>
+```
 
 두번째 인자 options 는 넣을 수도 안넣을 수도 있다. 대괄호는 선택적 인자를 의미함.
 
@@ -63,7 +71,14 @@ fs.readFile 이라는 모듈은 로컬 파일을 읽어오는 메소드 이다. 
 
 문자열로 넣을 경우에는 인코딩인 ‘utf-8’ 을 넘기게 된다.
 
-### 3. callback <Function>- err <Error>- data <string> | <Buffer>
+### 3. callback 의 타입. function
+
+인자로 들어오는 타입은,
+
+```js
+err <Error>
+data <string> | <Buffer>
+```
 
 파일을 읽고 난 뒤에 비동기적으로 실행되는 함수인 콜백 함수를 넘긴다.
 
@@ -73,11 +88,11 @@ fs.readFile 이라는 모듈은 로컬 파일을 읽어오는 메소드 이다. 
 
 에러가 발생하지 않으면 err 는 null 이 되며 data 에 문자열이나 Buffer 라는 객체가 전달될 것이다.
 
-<b>Q. data 에는 문자열이나 Buffer 가 전달됩니다. 어떤 경우에 문자열로 전달되는 것일까요?</b>
+Q. data 에는 문자열이나 Buffer 가 전달됩니다. 어떤 경우에 문자열로 전달되는 것일까요?
 
 fs.readFile 의 두번째 options 인자에 ‘utf-8’ 이라는 인코딩을 명기해 주었을 때?? 아니라면 Buffer 가 전달될 것이다.
 
-Buffer 의 형태 :
+Buffer 의 형태는 아래와 같다.
 
 ```js
 <Buffer ec bd 94 eb 93 9c ed 85 8c ec 9d b4 ec 8a a4 ed 8a b8 20 ec a0 9c eb 8f 84 eb 8a 94 20 ec 97 86 eb 82 98 ec 9a 94 3f 20 e3 85 a0 e3 85 a0 20 ec 8b 9d ... 36 more bytes>
