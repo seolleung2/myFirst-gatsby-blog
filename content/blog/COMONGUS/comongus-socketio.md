@@ -1,6 +1,6 @@
 ---
 title: 🐧Socket.io 를 적용한 Real-Time Chat
-date: 2021-01-05 01:550:00
+date: 2021-01-05 02:02:00
 category: COMONGUS
 draft: false
 ---
