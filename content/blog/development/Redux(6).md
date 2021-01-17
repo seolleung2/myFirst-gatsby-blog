@@ -1,6 +1,6 @@
 ---
 title: 🐤Redux - Part 2. React + Redux (5)
-date: 2021-01-14 02:00:00
+date: 2021-01-17 15:40:00
 category: development
 draft: false
 ---
