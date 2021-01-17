@@ -91,6 +91,18 @@ const mapStateToProps = (state, ownProps) => {
 
 ownProps.match.params.id 가 같은 요소 하나를 리턴하게 한다.
 
+```jsx
+const mapStateToProps = (state, ownProps) => {
+  console.log(ownProps)
+  const {
+    match: {
+      params: { id },
+    },
+  } = ownProps
+  return { toDo: state.find(toDo => toDo.id === parseInt(id)) }
+}
+```
+
 Detail 컴포넌트에서 props 로 받아 콘솔 로그를 확인해 보면,
 
 ![](./images/redux/console2.jpeg)
