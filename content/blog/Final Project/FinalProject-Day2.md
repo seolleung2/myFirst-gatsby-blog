@@ -55,3 +55,47 @@ flexbox 는 오로지 item 들이 같은 줄에 있게 만드는 역할이다.
 flex-wrap: wrap 은 child 의 width (너비) 크기를 유지하게 한다.
 
 브라우저 폭이 줄어들수록 child 가 하나씩 다음 줄로 내려가게 된다.
+
+아하.. 이번에는 이 <u>flex-wrap 속성을 잠시 주석처리 (flex-wrap: nowrap)</u> 해 두고, flex-direction 을 수정해 보았다.
+
+## 🚀flex-direction: row-reverse, column-reverse
+
+flex-direction: row-reverse 는 HTML 을 건들지 않고도 박스의 방향 (순서) 을 뒤집을 수 있다.
+
+![](./images/row-reverse.jpeg)
+
+flex-direction 의 기본값은 row 인 점을 다시 떠올려 보면 이해가 된다.
+
+flex-direction: column-reverse 로 하면 아래 이미지 의 모습이다.
+
+![](./images/col-reverse.jpeg)
+
+이제 다시 flex-direction 을 주석처리 해 두자.
+
+## 🚀flex-wrap: wrap-reverse
+
+flex-wrap: wrap-reverse 를 주었을 때의 모습은 아래 그림이다.
+
+![](./images/wrap-reverse.jpeg)
+
+flex-direction 을 row-reverse 로 주고 동시에 flex-wrap 을 wrap 으로 준 아래 그림과 비교해보자.
+
+![](./images/row-reverse-wrap.jpeg)
+
+그런데 줄 사이의 간격, 공백을 어떻게 조절할까? 너무 떨어져 있어서 완전 붙여 보고도 싶은데 말이다.
+
+## 🚀align-content, 박스 사이의 line space 를 조절해주기.
+
+박스 위에 줄과 아래 줄에 있는 빈 공간, line-space 를 어떻게 처리해 줄 수 있을까?
+
+이 공간을 align-content 라고 부른다.
+
+father 에 flex 를 선언하듯이, 마찬가지로 align-content: flex-start 로 줘보자.
+
+![](./images/align-content.jpeg)
+
+윗 줄 아랫줄 사이의 빈 공간이 없어져 버린다.
+
+center 로 주니까 전부 가운데로 옮겨져 가기도 한다.
+
+또는 space-between, space-around(default) 등을 써서 line 간격을 변경할 수도 있었다.
