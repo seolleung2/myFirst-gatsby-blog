@@ -21,7 +21,7 @@ https://developers.kakao.com/docs/latest/ko/kakaologin/prerequisite
 
 에 잘 소개되어 있다.
 
-![]('https://developers.kakao.com/docs/latest/ko/assets/style/images/kakaologin/kakaologin_process.png')
+![](https://developers.kakao.com/docs/latest/ko/assets/style/images/kakaologin/kakaologin_process.png)
 
 공식 문서에 있는 해당 이미지가 과정을 잘 설명해 주고 있다.
 
