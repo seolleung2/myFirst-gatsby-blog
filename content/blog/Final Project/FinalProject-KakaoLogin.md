@@ -214,7 +214,7 @@ new URL 인스턴스에 자세히 보니까 searchParams 라는 키가 있었고
 
 아니.. 아직 한 발 더 남았다.
 
-![]('https://coinpan.com/files/attach/images/67506534/142/248/091/4378288c0e605fcacb0d5b46c7ad608b.png')
+![](https://coinpan.com/files/attach/images/67506534/142/248/091/4378288c0e605fcacb0d5b46c7ad608b.png)
 
 ### 4. 인증 코드가 전달되는 Redirect URL 확인 및 리액트 컴포넌트 설정.
 
