@@ -59,7 +59,7 @@ CSS 중에서도 제일 핵심 개념, 박스 즉 레이아웃을 내가 의도�
 
 물론 학습했던 것을 적용하기 위해서는 강의에만 끝내는 것이 아니라 박스 모델 같은 개념에 대해 여러 연습을 시도해야 했다.
 
-![](https://twitter.com/i/status/1097100897207762945)
+<p align="center"><img src="https://thumbs.gfycat.com/FirstWarpedInganue-size_restricted.gif"></p>
 
 내가 원하는 대로 위치 이동이 안 될 때는 먼저 박스에 경계선을 쳐놓고 의도하는 코드를 작성해 나가고는 했다.
 
