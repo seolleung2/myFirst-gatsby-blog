@@ -1,6 +1,6 @@
 ---
 title: 🐤Traditional Data Flow, CSR, SSR
-date: 2021-04-06 22:-0:00
+date: 2021-04-06 22:00:00
 category: Next.js
 draft: false
 ---
