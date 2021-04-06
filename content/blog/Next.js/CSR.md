@@ -1,6 +1,6 @@
 ---
-title: 🐤Next.js 에서 라우팅 하기
-date: 2021-03-20 18:30:00
+title: 🐤Traditional Data Flow, CSR, SSR
+date: 2021-04-06 22:-0:00
 category: Next.js
 draft: false
 ---
