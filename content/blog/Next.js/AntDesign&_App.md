@@ -94,3 +94,72 @@ import 'antd/dist/antd.css'
 pages 에 있는 각 파일마다 모두 해당 코드를 넣어주어야 할까? 아니다.
 
 ## 🏠pages 내 \_app.js 를 생성
+
+\_app.js 파일에서 page 들의 공통되는 사항들을 처리해 줄 수가 있다.
+
+```js
+import React from 'react'
+import 'antd/dist/antd.css'
+import PropTypes from 'prop-types'
+
+const NodeBird = ({ Component }) => {
+  return <Component />
+}
+
+NodeBird.propTypes = {
+  Component: PropTypes.elementType.isRequired,
+}
+
+export default NodeBird
+```
+
+pages 경로 내 index.js, profile.js, signup.js 등의 Component 부분이 props 로 전달 되어서 해당 Component 부분이 리턴되는 코드이다.
+
+즉 \_app.js 가 pages 의 다른 파일들의 "부모" 인 셈이다.
+
+<strong>모든 페이지에서 공통인 부분은 \_app.js 에 넣으면 된다 >>> pages 들의 공통 부분!</strong>
+
+<strong>특정 컴포넌트 끼리 공통인 부분은 Component 를 별도로 만들어 개별 컴포넌트를 감싸준다.</strong>
+
+## 🔬propTypes
+
+https://ko.reactjs.org/docs/typechecking-with-proptypes.html
+
+리액트 공식문서 참조.
+
+props 로 넘어오는 것들에 대한 점검이 귀찮? 아 보일 수도 있지만 그만큼 서비스의 안정성이 높아지고 버그를 예방할 수 있다고 생각한다.
+
+## ✅Next.js 에서 head 태그를 수정하고 싶을 때
+
+Next.js 는 Head 컴포넌트를 제공한다.
+
+일반 리액트에서는 public 경로 내 index.html 에서 수정할 수 있었다.
+
+아래 코드를 보자.
+
+```js
+import React from 'react'
+import 'antd/dist/antd.css'
+import PropTypes from 'prop-types'
+import Head from 'next/head' // Head 컴포넌트 import 하기
+
+const NodeBird = ({ Component }) => {
+  return (
+    <>
+      <Head>
+        <meta charSet="utf-8" />
+        <title>NodeBird</title>
+      </Head>
+      <Component />
+    </>
+  )
+}
+
+NodeBird.propTypes = {
+  Component: PropTypes.elementType.isRequired,
+}
+
+export default NodeBird
+```
+
+페이지 별로 title 등을 다르게 적용해 주고 싶다면 해당 페이지 마다 Head 를 불러와서 입맛에 맞게 수정하면 될 것이다.
