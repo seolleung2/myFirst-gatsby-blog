@@ -80,11 +80,13 @@ import { Menu, Input, Row, Col } from 'antd'
 
 2. (효율성을 위해) 모바일 (XS) 디자인을 먼저 해야 한다. 데스크탑부터 하면 breakpoint 설정이 어려워진다.
 
+```js
 - xs : 모바일
 
 - sm : 태블릿
 
 - md : 작은 데스크탑
+```
 
 공식 문서 사이트 : https://ant.design/components/grid/
 
