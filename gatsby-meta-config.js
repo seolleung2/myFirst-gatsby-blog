@@ -1,8 +1,8 @@
 module.exports = {
-  title: `💻 seolleung2.dev`,
-  description: `seollung2의 블로그입니다. 개발 학습과 관련한 글을 작성합니다.`,
-  author: `[seolleung2]`,
-  introduction: `개발을 스스로 해낼 수 있는 올바른 길을 습득하는 중입니다.`,
+  title: `🐻‍❄️TeddyJung's.Dev`,
+  description: `테디정의 개발새발 블로그 입니다🍎`,
+  author: `[TeddyBearJung]`,
+  introduction: `원하는 개발자가 되었지만 생각보다 모르는게 엄청 많아 울코(😭) 중입니다.`,
   siteUrl: `https://dev-seolleung2.netlify.app/`, // Your blog site url
   sitemapPath: `https://dev-seolleung2.netlify.app/sitemap.xml`,
   robotsPolicy: [{ userAgent: '*', allow: '/' }],
@@ -10,7 +10,7 @@ module.exports = {
     twitter: ``, // Your Twitter account
     github: `seolleung2`, // Your GitHub account
     medium: `@seolleung22`, // Your Medium account
-    facebook: `dev.seolleung`, // Your Facebook account
+    facebook: `dotorimook8808`, // Your Facebook account
     linkedin: ``, // Your LinkedIn account
   },
   icon: `content/assets/felog.png`, // Add your favicon
@@ -24,6 +24,8 @@ module.exports = {
     `javascript`,
     `books`,
     `review`,
+    `react`,
+    `react native`,
   ],
   comment: {
     disqusShortName: '', // Your disqus-short-name. check disqus.com.
