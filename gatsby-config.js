@@ -71,6 +71,8 @@ module.exports = {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         trackingId: metaConfig.ga,
+        head: true,
+        anonymize: true,
       },
     },
     {
@@ -91,6 +93,25 @@ module.exports = {
         pathToConfigModule: `src/utils/typography`,
       },
     },
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        host: 'https://dev-seolleung2.netlify.app/',
+        sitemap: 'https://dev-seolleung2.netlify.app/sitemap.xml',
+        policy: [
+          {
+            userAgent: '*',
+            allow: '/',
+          },
+        ],
+      },
+    },
+    {
+      resolve: `gatsby-plugin-google-adsense`,
+      options: {
+        publisherId: metaConfig.ad,
+      },
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-feed`,
@@ -99,14 +120,5 @@ module.exports = {
     `gatsby-plugin-sass`,
     `gatsby-plugin-lodash`,
     `gatsby-plugin-sitemap`,
-    `gatsby-plugin-netlify`,
-    {
-      resolve: 'gatsby-plugin-robots-txt',
-      options: {
-        host: metaConfig.siteUrl,
-        sitemap: metaConfig.sitemapPath,
-        policy: metaConfig.robotsPolicy,
-      },
-    },
   ],
 }

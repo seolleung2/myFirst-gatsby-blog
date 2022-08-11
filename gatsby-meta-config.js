@@ -12,6 +12,7 @@ module.exports = {
     medium: `@seolleung22`, // Your Medium account
     facebook: `dotorimook8808`, // Your Facebook account
     linkedin: ``, // Your LinkedIn account
+    instagram: ``, // Your LinkedIn account
   },
   icon: `content/assets/felog.png`, // Add your favicon
   keywords: [
@@ -40,5 +41,7 @@ module.exports = {
   share: {
     facebookAppId: '638631253452593', // Add facebookAppId for using facebook share feature v3.2
   },
-  ga: '', // Add your google analytics tranking ID
+  ga: '0', // Add your google analytics tranking ID
+  ad: '', // Add your google adsense publisherId `ca-pub-xxxxxxxxxx`
+
 }
