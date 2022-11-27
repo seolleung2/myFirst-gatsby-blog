@@ -1,15 +1,15 @@
 module.exports = {
-  title: `🐻‍❄️TeddyJung's.Dev`,
-  description: `테디정의 개발새발 블로그 입니다🍎`,
-  author: `[TeddyBearJung]`,
-  introduction: `원하는 개발자가 되었지만 생각보다 모르는게 엄청 많아 울코(😭) 중입니다.`,
+  title: `🌰DotoriLog`,
+  description: `🌰도토리묵의 개발 블로그 입니다.`,
+  author: `[DotoriMook]`,
+  introduction: `프론트엔드 주니어 개발자 도토리묵의 기술개발 블로그 입니다.`,
   siteUrl: `https://dev-seolleung2.netlify.app/`, // Your blog site url
   sitemapPath: `https://dev-seolleung2.netlify.app/sitemap.xml`,
   robotsPolicy: [{ userAgent: '*', allow: '/' }],
   social: {
-    twitter: ``, // Your Twitter account
+    twitter: `teddyjung8808`, // Your Twitter account
     github: `seolleung2`, // Your GitHub account
-    medium: `@seolleung22`, // Your Medium account
+    // medium: `@seolleung22`, // Your Medium account
     facebook: `dotorimook8808`, // Your Facebook account
     linkedin: ``, // Your LinkedIn account
     instagram: ``, // Your LinkedIn account
@@ -43,5 +43,4 @@ module.exports = {
   },
   ga: '0', // Add your google analytics tranking ID
   ad: '', // Add your google adsense publisherId `ca-pub-xxxxxxxxxx`
-
 }
