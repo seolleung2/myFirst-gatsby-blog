@@ -27,6 +27,10 @@ module.exports = {
     `review`,
     `react`,
     `react native`,
+    `개발`,
+    `프론트엔드`,
+    `리액트`,
+    `자바스크립트`,
   ],
   comment: {
     disqusShortName: '', // Your disqus-short-name. check disqus.com.
